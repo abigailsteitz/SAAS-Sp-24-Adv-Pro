@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -30,6 +30,7 @@
 		0ADCF8FA259356D60079C0C9 /* MeetingTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADCF8F9259356D60079C0C9 /* MeetingTimerView.swift */; };
 		0ADCF90025935E570079C0C9 /* SpeechRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADCF8FF25935E570079C0C9 /* SpeechRecognizer.swift */; };
 		0ADCF908259361600079C0C9 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADCF907259361600079C0C9 /* HistoryView.swift */; };
+		C5E69BAD2BFD50A200A4B3E5 /* OpenAI in Frameworks */ = {isa = PBXBuildFile; productRef = C5E69BAC2BFD50A200A4B3E5 /* OpenAI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5E69BAD2BFD50A200A4B3E5 /* OpenAI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,6 +223,9 @@
 			dependencies = (
 			);
 			name = Scrumdinger;
+			packageProductDependencies = (
+				C5E69BAC2BFD50A200A4B3E5 /* OpenAI */,
+			);
 			productName = Scrumdinger;
 			productReference = 0A28A2ED259250D300AFDE2D /* Scrumdinger.app */;
 			productType = "com.apple.product-type.application";
@@ -292,6 +297,9 @@
 				Base,
 			);
 			mainGroup = 0A28A2E4259250D300AFDE2D;
+			packageReferences = (
+				C5E69BAB2BFD50A200A4B3E5 /* XCRemoteSwiftPackageReference "OpenAI" */,
+			);
 			productRefGroup = 0A28A2EE259250D300AFDE2D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -672,6 +680,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C5E69BAB2BFD50A200A4B3E5 /* XCRemoteSwiftPackageReference "OpenAI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/MacPaw/OpenAI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.9;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C5E69BAC2BFD50A200A4B3E5 /* OpenAI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C5E69BAB2BFD50A200A4B3E5 /* XCRemoteSwiftPackageReference "OpenAI" */;
+			productName = OpenAI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0A28A2E5259250D300AFDE2D /* Project object */;
 }
